@@ -1,0 +1,9 @@
+.app-shell[data-role="accountant"] {
+  --role-accent: #1643b8;
+  --role-accent-strong: #061433;
+  --role-accent-soft: #f1f7ff;
+}
+
+.app-shell[data-role="accountant"] .sidebar {
+  border-right-color: rgba(22, 67, 184, 0.14);
+}
