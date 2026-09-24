@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 
 import "@/styles/common.css";
+import "@/styles/brand-theme.css";
 import "@/styles/super-admin.css";
 import "@/styles/local-admin.css";
 import "@/styles/accountant.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Accounting Intelligence | SAIC",
@@ -21,7 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={cn("font-sans", geist.variable)}
+    >
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

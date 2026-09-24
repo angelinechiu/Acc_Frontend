@@ -1,0 +1,19 @@
+/* Brand theme override for Accounting Intelligence
+   Maps shadcn primary to #022fa2 (navy blue)
+*/
+
+:root {
+  --primary: oklch(0.42 0.185 264);
+  --primary-foreground: oklch(0.99 0 0);
+  --ring: oklch(0.55 0.15 264);
+  --sidebar-primary: oklch(0.42 0.185 264);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+}
+
+.dark {
+  --primary: oklch(0.65 0.17 264);
+  --primary-foreground: oklch(0.15 0.02 264);
+  --ring: oklch(0.65 0.17 264);
+  --sidebar-primary: oklch(0.65 0.17 264);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+}
